@@ -41,3 +41,4 @@ export const TransactionTypes = styled.View`
   margin-top: 8px;
   margin-bottom: 16px;
 `;
+
