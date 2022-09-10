@@ -4,7 +4,7 @@ import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 
 import { Feather } from '@expo/vector-icons'
 import { getStatusBarHeight } from "react-native-iphone-x-helper";
-
+import { BorderlessButton } from "react-native-gesture-handler";
 import {DataListProps} from '.';
 
 export const Container = styled.View`
@@ -62,6 +62,8 @@ export const Icon = styled(Feather)`
   font-size: ${RFValue(24)}px;
 `;
 
+export const LogOutButton = styled(BorderlessButton)``;
+
 export const HighlightCards = styled.ScrollView.attrs({
   horizontal: true,
   showHorizontalScrollIndicator: false,
@@ -82,4 +84,10 @@ export const Title = styled.Text`
   font-size: ${RFValue(18)}px;
   font-family: ${({ theme }) => theme.fonts.regular};
 
+`;
+
+export const LoadContainer = styled.View`
+  flex:1;
+  justify-content: center;
+  align-content: center;
 `;

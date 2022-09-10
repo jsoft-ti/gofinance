@@ -12,7 +12,7 @@ export const Container = styled.View`
   background-color: ${({theme}) => theme.colors.shape};
   border-radius: 5px;
   padding: 17px 24px;
-
+  margin-top: 10px;
 `;
 
 export const Title = styled.Text`
