@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Welcome from "./src/components/Welcome"
@@ -17,6 +16,7 @@ import theme
  import AppLoading from 'expo-app-loading';
  import {NavigationContainer} from '@react-navigation/native'
  import {AppRoutes} from './src/routes/app.routes'
+ import { StatusBar } from 'react-native';
  
 export default function App() {
   const [fontLoaded] = useFonts({
@@ -32,6 +32,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <NavigationContainer>
+        <StatusBar barStyle='light-content'/>
       <AppRoutes />
       </NavigationContainer>
        
